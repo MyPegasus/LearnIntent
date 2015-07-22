@@ -16,11 +16,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MyActivity"
+            android:label="MyActivity" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
 
-        <activity android:name=".MyActivity">
+                <action android:name="com.example.mypegasus.learnintent.intent.action.MyActivity" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".My2Activity"
+            android:label="@string/title_activity_my2" >
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
                 <action android:name="com.example.mypegasus.learnintent.intent.action.MyActivity" />
+                <data android:scheme="app" android:host="172.19.7.89" android:port="80" />
             </intent-filter>
         </activity>
     </application>
